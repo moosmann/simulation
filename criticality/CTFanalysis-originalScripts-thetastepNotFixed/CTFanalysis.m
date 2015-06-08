@@ -76,6 +76,14 @@ for kk = length(MaxPhaseShift):-1:1
     %upperLimit =  MaxPhaseShift(kk)*1000;
     %lowerLimit = -MaxPhaseShift(kk)*100;
 end
+% Check angular range
+mask = zeros(size(phase0));
+for rr = paddim/2:-1:1
+    for ii = length(theta):-1:1
+        mask(round(paddim/2+rr*cos(theta(ii))),round(paddim/2+rr*sin(theta(ii))))=1;
+    end
+end
+%ishow(mask)
 fprintf('Time for computation of maps: %fs\n',toc)
 xMin = 25;
 x = xMin:180;

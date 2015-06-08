@@ -1,7 +1,6 @@
 %Analysis of the CTF model for increasing values of the absolute phase
 %shift.
 %% !!!!!!!!!! fixed angular integration
-
 clear all
 close all hidden
 
@@ -57,9 +56,8 @@ for kk = length(MaxPhaseShift):-1:1
     % Loop over angular offsets.
     for offsetFac = 1
         % Define angular sectors.
-        thetaoffset = offsetFac*0.05;
-        %thetastep = pi/2*paddim/2;
-        thetastep = pi/2/(paddim);
+        thetaoffset = offsetFac*0.05;        
+        thetastep = pi/2/paddim; %BEFORE: thetastep = pi/2*paddim/2;
         theta = thetaoffset:thetastep:pi/2-thetaoffset;
         theta = theta(:);
         theta = cat(1,theta,theta+pi/2,theta+pi,theta+3*pi/2);
