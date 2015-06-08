@@ -19,4 +19,4 @@ xplot = 10:numel(MaxPhaseShift);
 S = 1:numel(MaxPhaseShift);
 plot(S(xplot),cfMinPos(xplot), '.')
 axis tight
-saveas(gcf, sprintf('./%s/MinPos_vs_S.pnd', plotFolder), 'png')
+saveas(gcf, sprintf('./%s/MinPos_vs_S.png', plotFolder), 'png')
