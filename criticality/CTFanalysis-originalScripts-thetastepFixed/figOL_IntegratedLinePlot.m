@@ -1,5 +1,6 @@
-%Prior to evaluation the script 'CTFanlayisis.m' needs to be run or the
-%data 'CTFanalysis.mat' needs to be imported: load('CTFanalysis.mat')
+%Prior to execution the script 'CTFanlaysis.m' needs to be executed or
+%CTFanlaysis-workspace.mat' needs to be loaded and 'FitCritExpoScript.m'
+%needs to be run.
 
 ca
 clear X1 YMatrix1 plot1 axes1 figure1 X2 YarMatrix1 plot2 axes2 figure2 plot3 axes3 figure3

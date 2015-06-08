@@ -1,5 +1,6 @@
-%Prior to execution the scrip 'FitCritExpoScript.m' needs to be run or the
-%data 'CTFanlaysis2.mat' needs to be loaded.
+%Prior to execution the script 'CTFanlaysis.m' needs to be executed or
+%CTFanlaysis-workspace.mat' needs to be loaded and 'FitCritExpoScript.m'
+%needs to be run.
 
 ca
 smaxIndex = 7;
